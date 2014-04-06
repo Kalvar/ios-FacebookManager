@@ -277,7 +277,7 @@ static NSString *_kFacebookRequestResults = @"_kFacebookRequestResults";
 @synthesize userBirthday = _userBirthday;
 @synthesize userInfo     = _userInfo;
 
--(instancetype)sharedManager
++(instancetype)sharedManager
 {
     static dispatch_once_t pred;
     static FacebookManager *_object = nil;

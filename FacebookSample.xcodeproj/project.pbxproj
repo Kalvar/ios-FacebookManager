@@ -22,8 +22,8 @@
 		8E45D75A18EF2B5B006F4EC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E45D75818EF2B5B006F4EC3 /* InfoPlist.strings */; };
 		8E45D75C18EF2B5B006F4EC3 /* FacebookSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E45D75B18EF2B5B006F4EC3 /* FacebookSampleTests.m */; };
 		8E45D76618EF2C27006F4EC3 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E45D76518EF2C27006F4EC3 /* AdSupport.framework */; };
-		8E45D76918EF2C66006F4EC3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E45D76818EF2C66006F4EC3 /* FacebookSDK.framework */; };
 		8E45D76E18EF2C8F006F4EC3 /* FacebookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E45D76D18EF2C8F006F4EC3 /* FacebookManager.m */; };
+		8E45D77018F10299006F4EC3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E45D76F18F10299006F4EC3 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,9 +57,9 @@
 		8E45D75918EF2B5B006F4EC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8E45D75B18EF2B5B006F4EC3 /* FacebookSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookSampleTests.m; sourceTree = "<group>"; };
 		8E45D76518EF2C27006F4EC3 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		8E45D76818EF2C66006F4EC3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		8E45D76C18EF2C8F006F4EC3 /* FacebookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookManager.h; sourceTree = "<group>"; };
 		8E45D76D18EF2C8F006F4EC3 /* FacebookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookManager.m; sourceTree = "<group>"; };
+		8E45D76F18F10299006F4EC3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E45D76618EF2C27006F4EC3 /* AdSupport.framework in Frameworks */,
-				8E45D76918EF2C66006F4EC3 /* FacebookSDK.framework in Frameworks */,
+				8E45D77018F10299006F4EC3 /* FacebookSDK.framework in Frameworks */,
 				8E45D73318EF2B5B006F4EC3 /* CoreGraphics.framework in Frameworks */,
 				8E45D73518EF2B5B006F4EC3 /* UIKit.framework in Frameworks */,
 				8E45D73118EF2B5B006F4EC3 /* Foundation.framework in Frameworks */,
@@ -167,7 +167,7 @@
 		8E45D76718EF2C31006F4EC3 /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
-				8E45D76818EF2C66006F4EC3 /* FacebookSDK.framework */,
+				8E45D76F18F10299006F4EC3 /* FacebookSDK.framework */,
 				8E45D76518EF2C27006F4EC3 /* AdSupport.framework */,
 			);
 			name = Facebook;
@@ -418,10 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/Kalvar/Desktop/FacebookSample,
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FacebookSample/FacebookSample-Prefix.pch";
 				INFOPLIST_FILE = "FacebookSample/FacebookSample-Info.plist";
@@ -435,10 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/Kalvar/Desktop/FacebookSample,
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FacebookSample/FacebookSample-Prefix.pch";
 				INFOPLIST_FILE = "FacebookSample/FacebookSample-Info.plist";
@@ -508,6 +502,7 @@
 				8E45D76118EF2B5B006F4EC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E45D76218EF2B5B006F4EC3 /* Build configuration list for PBXNativeTarget "FacebookSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +511,7 @@
 				8E45D76418EF2B5B006F4EC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
